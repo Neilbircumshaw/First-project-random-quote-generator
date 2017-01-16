@@ -81,7 +81,7 @@ var QuotesSeen = [];
 function getRandomQuote() {
   if (quotes.length == 0){                                       
   quotes = QuotesSeen.splice(0, QuotesSeen.length);}      
-  var random_nub = Math.floor(Math.random() * quotes.length);     //learn this Neil//
+  var random_nub = Math.floor(Math.random() * quotes.length);     
   var splicedQuote = quotes.splice(random_nub, 1)[0];             
   QuotesSeen.push(splicedQuote);                             
   return splicedQuote;                                        
